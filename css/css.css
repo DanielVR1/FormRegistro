@@ -9,7 +9,7 @@ body{
 }
 
 .form-register{
-    width: 25%;
+    width: 50%;
     background: #24303c;
     padding: 30px;
     margin: auto;
@@ -23,37 +23,12 @@ body{
     font-size: 22px;
     margin-bottom: 20px;
 }
-.btn:hover{
-    width: 12%;
-    background: lightseagreen;
-    color: black;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid lightseagreen;
-    font-family: 'calibri';
-    font-size: 18px;  
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-}
 
-.btn{
-    width: 12%;
-    color: white;
-    background: #4642B7;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #4642B7;
-    font-family: 'calibri';
-    font-size: 18px;  
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-}
-
-.controls1{
-    width: 100%;
+.controls2{
+    width: 20%;
     background: #24303c;
-    color: white;
     padding: 10px;
+    color: white;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid lightseagreen;
@@ -62,7 +37,7 @@ body{
 }
 
 .controls{
-    width: 87%;
+    width: 100%;
     background: #24303c;
     padding: 10px;
     color: white;
@@ -89,6 +64,10 @@ body{
     font-size: 16px;
 }
 
+h5.regis{
+    color: chartreuse;
+}
+
 .form-register .boton:hover{
     width: 100%;
     background: lightseagreen;
@@ -98,10 +77,6 @@ body{
     color: black;
     margin: 16px 0;
     font-size: 16px;
-}
-
-h5.regis{
-    color: chartreuse;
 }
 
 a{

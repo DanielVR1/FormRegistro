@@ -6,26 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="css/css.css">
-    <title>Iniciar Sesión</title>
+    <title>Registro</title>
 </head>
 <body onload="inicializar()">
-  <section class="form-register">
-    <center>
-      <h5 id="pag" class="regis"></h5>
-    </center>
-    <div id="ocultar">
-<form method="POST" action="">
-      <h4>Iniciar Sesión</h4>
-        *Usuario:<br> <input class="controls1" type="text" id="Usuario" placeholder="Correo o Telefono.." required><br>
-        *Contraseña:<br> <input class="controls" type="password" name="password" id="password" placeholder="Contraseña..." required>
-        <button class="btn" type="button" onclick="mostrarContraseña()">Ver</button>
-        <br>
-        <a href="../FormRegistro/index.html">¿Has olvidado la contraseña?</a><br>
-        <a href="#"><input class="boton" type="button" id="botones" value="Enviar"></a>
-        <h5 id="logOut"></h5>
-  </section>
-</form>
-</div>
-<script src="js/js.js"></script>
+  <form method="POST" action="">
+    <section class="form-register">
+      <center>
+        <h5 id="pag" class="regis"></h5>
+        <h4>Formulario Registro</h4>
+      </center>
+      *Nombre: <input class="controls" type="text" id="nombre" placeholder="Nombre..." required> Apellidos: <input class="controls" type="text" id="apellidos" placeholder="Apellidos..." required>
+      *Correo Electronico o Telefono: <input class="controls" type="text" id="email" placeholder="Correo o Telefono..." required>
+      *Contraseña: <input class="controls" type="password" id="contraseña" placeholder="Contraseña..." required>
+      *Confirmación Contraseña: <input class="controls" type="password" id="Ccontraseña" required placeholder="Confirmar Contraseña..."><br>
+      Fecha de Nacimiento:<br> <input class="controls2" type="date" id="Fnacimiento">
+      <br><a href="..\FormInicioSesion\index.html">¿Ya tienes una cuenta?</a>
+      <input class="boton" type="button" id="botones" value="Enviar">
+    </section>
+  </form>
+    <script src="js/js.js"></script>
 </body>
 </html>
