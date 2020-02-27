@@ -28,7 +28,7 @@ body{
     width: 20%;
     background: #24303c;
     padding: 10px;
-    color: gray;
+    color: white;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid lightseagreen;
@@ -40,6 +40,7 @@ body{
     width: 100%;
     background: #24303c;
     padding: 10px;
+    color: white;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid lightseagreen;

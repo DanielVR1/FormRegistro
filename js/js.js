@@ -18,7 +18,7 @@ function validar() {
             comprob = flase;
         }
         
-        if(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8}$/.test(contraseña) && contraseña == Ccontraseña){
+        if(/^(?=.*\d)(?=.*[@#\-_$%^&+=§!\?])(?=.*[a-z])(?=.*[A-Z])[0-9A-Za-z@#\-_$%^&+=§!\?]{8}$/.test(contraseña) && contraseña == Ccontraseña){
             comprob = true;
         }else if(Ccontraseña != contraseña){
             alert("Las contraseñas no coinciden: "+contraseña+" "+Ccontraseña);
@@ -29,16 +29,20 @@ function validar() {
         }
     }else{
         alert("Los campos: \nNombre\nApellidos\nCorreo - Telefono\nContraseña\nNo pueden dejarse vacios.");
-        // document.body.innerHTML = "Los campos: \nNombre\nApellidos\nCorreo - Telefono\nContraseña\nNo pueden dejarse vacios.";
         comprob = false;
     }
 
     if(comprob == true){
         pasarPag();
-        var nombre = document.getElementById('email').value;
+        var valor = document.getElementById('nombre').value;
+        var tiempo = 1;
+        setCookie("nombre",valor,tiempo);
+        var valor = document.getElementById('email').value;
+        var tiempo = 1;
+        setCookie("email",valor,tiempo);
         var valor = document.getElementById('contraseña').value;
         var tiempo = 1;
-        setCookie(nombre,valor,tiempo);
+        setCookie("contraseña",valor,tiempo);
         window.location="../FormInicioSesion/index.html";
     }
 }
